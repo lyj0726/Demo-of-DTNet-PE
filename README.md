@@ -1,5 +1,5 @@
-## Samples from "F-T-LSTM based Complex Network for Joint Acoustic Echo Cancellation and Speech Enhancement"
-__Authors__: Shimin Zhang, Yuxiang Kong, Shubo Lv, Yanxin Hu, Lei Xie
+## Samples from "DTNet-PE: The Modified Conv-TasNet for Acoustic Echo Cancellation"
+__Authors__: Yajie Liu, Weiping Tu, Yuhong Yang, Li Xiao
 
 
 Sample: https://lyj0726.github.io/DTNet-PE/
