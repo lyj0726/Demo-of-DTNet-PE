@@ -18,7 +18,7 @@
     </div>
 
     <hr style="height:1px;border:none;border-top:1px solid #555555; width:130%">
-    <h2>Part1: Blind test by Interspeech AEC-challenge 2021</h2>
+    <h2>Part1: Synthetic test dataset with label signals</h2>
     <style type="text/css">
         .tg {
             border-collapse: collapse;
@@ -85,7 +85,121 @@
             vertical-align: top
         }
     </style>
-    <h3>Double-talk scenario</h3>
+    <h3>Double-talk with label signal</h3>
+    <table class="tg" style="undefined;table-layout: fixed; width: 493px">
+        <colgroup>
+            <col style="width: 150px">
+            <col style="width: 300px">
+            <col style="width: 300px">
+            <col style="width: 300px">
+            <col style="width: 300px">
+        </colgroup>
+        <thead>
+            <tr>
+                <th class="tg-c3ow">Model</th>
+                <th class="tg-c3ow">Sample 1</th>
+                <th class="tg-c3ow">Sample 2</th>
+                <th class="tg-c3ow">Sample 3</th>
+                <th class="tg-c3ow">Sample 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="tg-pcvp">Microphone signal</td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg1-withEchoSignal.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg2-withEchoSignal.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg3-withEchoSignal.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg4-withEchoSignal.wav">
+                    </audio></td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">Label signal</td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg1-cleanSpeech.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg2-cleanSpeech.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg3-cleanSpeech.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg4-cleanSpeech.wav">
+                    </audio></td>
+            </tr>
+            <tr>
+                <td class="tg-pcvp">AEC-challenge baseline</td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg1-baseline.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg2-baseline.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg3-baseline.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg4-baseline.wav">
+                    </audio></td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">DPNet</td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg1-dpnet.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg2-dpnet.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg3-dpnet.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg4-dpnet.wav">
+                    </audio></td>
+            </tr>
+            <tr>
+                <td class="tg-pcvp">DPNet+PE</td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg1-dpnet+PE.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg2-dpnet+PE.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg3-dpnet+PE.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg4-dpnet+PE.wav">
+                    </audio></td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">DPNet+PE_Lpcp</td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg1-dpnet+PE+Lpcp.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg2-dpnet+PE+Lpcp.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg3-dpnet+PE+Lpcp.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg4-dpnet+PE+Lpcp.wav">
+                    </audio></td>
+            </tr>
+        </tbody>
+    </table>
+    <hr style="height:1px;border:none;border-top:1px solid #555555; width:130%">
+    <h2>Part2: Blind test by Interspeech AEC-challenge 2021</h2>
+
+    <h3>Double-talk with clean near-end signal</h3>
     <table class="tg" style="undefined;table-layout: fixed; width: 493px">
         <colgroup>
             <col style="width: 150px">
@@ -308,120 +422,6 @@
         </tbody>
     </table>
     <h3> Far-end single-talk scenario</h3>
-    <table class="tg" style="undefined;table-layout: fixed; width: 493px">
-        <colgroup>
-            <col style="width: 150px">
-            <col style="width: 300px">
-            <col style="width: 300px">
-            <col style="width: 300px">
-            <col style="width: 300px">
-        </colgroup>
-        <thead>
-            <tr>
-                <th class="tg-c3ow">Model</th>
-                <th class="tg-c3ow">Sample 1</th>
-                <th class="tg-c3ow">Sample 2</th>
-                <th class="tg-c3ow">Sample 3</th>
-                <th class="tg-c3ow">Sample 4</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td class="tg-pcvp">Microphone signal</td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/demo/Eg1-withEchoSignal.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/demo/Eg2-withEchoSignal.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/demo/Eg3-withEchoSignal.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/demo/Eg4-withEchoSignal.wav">
-                    </audio></td>
-            </tr>
-            <tr>
-                <td class="tg-0pky">Label signal</td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/demo/Eg1-cleanSpeech.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/demo/Eg2-cleanSpeech.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/demo/Eg3-cleanSpeech.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/demo/Eg4-cleanSpeech.wav">
-                    </audio></td>
-            </tr>
-            <tr>
-                <td class="tg-pcvp">AEC-challenge baseline</td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/demo/Eg1-baseline.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/demo/Eg2-baseline.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/demo/Eg3-baseline.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/demo/Eg4-baseline.wav">
-                    </audio></td>
-            </tr>
-            <tr>
-                <td class="tg-0pky">DPNet</td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/demo/Eg1-dpnet.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/demo/Eg2-dpnet.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/demo/Eg3-dpnet.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/demo/Eg4-dpnet.wav">
-                    </audio></td>
-            </tr>
-            <tr>
-                <td class="tg-pcvp">DPNet+PE</td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/demo/Eg1-dpnet+PE.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/demo/Eg2-dpnet+PE.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/demo/Eg3-dpnet+PE.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/demo/Eg4-dpnet+PE.wav">
-                    </audio></td>
-            </tr>
-            <tr>
-                <td class="tg-0pky">DPNet+PE_Lpcp</td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/demo/Eg1-dpnet+PE+Lpcp.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/demo/Eg2-dpnet+PE+Lpcp.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/demo/Eg3-dpnet+PE+Lpcp.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/demo/Eg4-dpnet+PE+Lpcp.wav">
-                    </audio></td>
-            </tr>
-        </tbody>
-    </table>
-    <hr style="height:1px;border:none;border-top:1px solid #555555; width:130%">
-    <h2>Part2: Synthetic test dataset with label signals</h2>
-
-    <h3>Double-talk with clean near-end signal</h3>
     <table class="tg" style="undefined;table-layout: fixed; width: 493px">
         <colgroup>
             <col style="width: 150px">
