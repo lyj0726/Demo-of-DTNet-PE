@@ -2,4 +2,4 @@
 __Authors__: Yajie Liu, Weiping Tu, Yuhong Yang, Li Xiao
 
 
-Sample: https://lyj0726.github.io/DTNet-PE/
+Sample: https://lyj0726.github.io/Demo-of-DTNet-PE/
