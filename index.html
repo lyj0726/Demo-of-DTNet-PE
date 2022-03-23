@@ -3,19 +3,18 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-    <title>F-T-LSTM based Complex Network for Joint Acoustic Echo Cancellation and Speech Enhancement</title>
+    <title>DTNet-PE: The Modified Conv-TasNet for Acoustic Echo Cancellation</title>
     <link rel="stylesheet" type="text/css" href="./stylesheets/github-light.css">
 </head>
 
 <body>
     <article>
         <header>
-            <h1>Samples from "F-T-LSTM based Complex Network for Joint Acoustic Echo Cancellation and Speech
-                Enhancement"</h1>
+            <h1>Samples from "DTNet-PE: The Modified Conv-TasNet for Acoustic Echo Cancellation"</h1>
         </header>
     </article>
 
-    <div><b>Authors:</b> Shimin Zhang, Yuxiang Kong, Shubo Lv, Yanxin Hu, Lei Xie
+    <div><b>Authors:</b> Yajie Liu, Weiping Tu, Yuhong Yang, Li Xiao
     </div>
 
     <hr style="height:1px;border:none;border-top:1px solid #555555; width:130%">
@@ -713,13 +712,12 @@
         </tbody>
     </table>
     <hr style="height:1px;border:none;border-top:1px solid #555555; width:130%">
-    <h2>Part2: Synthetic test dataset</h2>
+    <h2>Part2: Synthetic test dataset with label signals</h2>
 
     <h3>Double-talk with clean near-end signal</h3>
     <table class="tg" style="undefined;table-layout: fixed; width: 493px">
         <colgroup>
             <col style="width: 150px">
-            <col style="width: 300px">
             <col style="width: 300px">
             <col style="width: 300px">
             <col style="width: 300px">
@@ -732,138 +730,98 @@
                 <th class="tg-c3ow">Sample 2</th>
                 <th class="tg-c3ow">Sample 3</th>
                 <th class="tg-c3ow">Sample 4</th>
-                <th class="tg-c3ow">Sample 5</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td class="tg-pcvp">Microphone signal</td>
                 <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/microphone/clean/120_mic.wav">
+                        <source src="./samples/demo/Eg1-withEchoSignal.wav">
                     </audio></td>
                 <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/microphone/clean/20_mic.wav">
+                        <source src="./samples/demo/Eg2-withEchoSignal.wav">
                     </audio></td>
                 <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/microphone/clean/420_mic.wav">
+                        <source src="./samples/demo/Eg3-withEchoSignal.wav">
                     </audio></td>
                 <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/microphone/clean/500_mic.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/microphone/clean/50_mic.wav">
-                    </audio></td>
-            </tr>
-            <tr>
-                <td class="tg-0pky">Reference signal</td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/reference/clean/120_lpb.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/reference/clean/20_lpb.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/reference/clean/420_lpb.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/reference/clean/500_lpb.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/reference/clean/50_lpb.wav">
+                        <source src="./samples/demo/Eg4-withEchoSignal.wav">
                     </audio></td>
             </tr>
             <tr>
                 <td class="tg-0pky">Label signal</td>
                 <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/label/clean/120_label.wav">
+                        <source src="./samples/demo/Eg1-cleanSpeech.wav">
                     </audio></td>
                 <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/label/clean/20_label.wav">
+                        <source src="./samples/demo/Eg2-cleanSpeech.wav">
                     </audio></td>
                 <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/label/clean/420_label.wav">
+                        <source src="./samples/demo/Eg3-cleanSpeech.wav">
                     </audio></td>
                 <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/label/clean/500_label.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/label/clean/50_label.wav">
-                    </audio></td>
-            </tr>
-            <tr>
-                <td class="tg-pcvp">Webrtc-AEC3</td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/webrtc/clean/120_mic.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/webrtc/clean/20_mic.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/webrtc/clean/420_mic.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/webrtc/clean/500_mic.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/webrtc/clean/50_mic.wav">
-                    </audio></td>
-            </tr>
-            <tr>
-                <td class="tg-0pky">BLSTM</td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/blstm/clean/120_mic.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/blstm/clean/20_mic.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/blstm/clean/420_mic.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/blstm/clean/500_mic.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/blstm/clean/50_mic.wav">
+                        <source src="./samples/demo/Eg4-cleanSpeech.wav">
                     </audio></td>
             </tr>
             <tr>
                 <td class="tg-pcvp">AEC-challenge baseline</td>
                 <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/aec_challenge_baseline/clean/120_mic.wav">
+                        <source src="./samples/demo/Eg1-baseline.wav">
                     </audio></td>
                 <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/aec_challenge_baseline/clean/20_mic.wav">
+                        <source src="./samples/demo/Eg2-baseline.wav">
                     </audio></td>
                 <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/aec_challenge_baseline/clean/420_mic.wav">
+                        <source src="./samples/demo/Eg3-baseline.wav">
                     </audio></td>
                 <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/aec_challenge_baseline/clean/500_mic.wav">
+                        <source src="./samples/demo/Eg4-baseline.wav">
                     </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/aec_challenge_baseline/clean/50_mic.wav">
-                    </audio></td>
-
             </tr>
             <tr>
-                <td class="tg-0pky">DCCRN-AEC</td>
+                <td class="tg-0pky">DPNet</td>
                 <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/dccrn_aec/clean/120_mic.wav">
+                        <source src="./samples/demo/Eg1-dpnet.wav">
                     </audio></td>
                 <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/dccrn_aec/clean/20_mic.wav">
+                        <source src="./samples/demo/Eg2-dpnet.wav">
                     </audio></td>
                 <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/dccrn_aec/clean/420_mic.wav">
+                        <source src="./samples/demo/Eg3-dpnet.wav">
                     </audio></td>
                 <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/dccrn_aec/clean/500_mic.wav">
+                        <source src="./samples/demo/Eg4-dpnet.wav">
+                    </audio></td>
+            </tr>
+            <tr>
+                <td class="tg-pcvp">DPNet+PE</td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg1-dpnet+PE.wav">
                     </audio></td>
                 <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/dccrn_aec/clean/50_mic.wav">
+                        <source src="./samples/demo/Eg2-dpnet+PE.wav">
                     </audio></td>
-
-
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg3-dpnet+PE.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg4-dpnet+PE.wav">
+                    </audio></td>
+            </tr>
+            <tr>
+                <td class="tg-0pky">DPNet+PE_Lpcp</td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg1-dpnet+PE+Lpcp.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg2-dpnet+PE+Lpcp.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg3-dpnet+PE+Lpcp.wav">
+                    </audio></td>
+                <td class="tg-ihkz"><audio controls="">
+                        <source src="./samples/demo/Eg4-dpnet+PE+Lpcp.wav">
+                    </audio></td>
             </tr>
             <tr>
                 <td class="tg-pcvp">DTLN-AEC</td>
@@ -882,26 +840,8 @@
                 <td class="tg-ihkz"><audio controls="">
                         <source src="./samples/simu_test/dtln_aec/clean/50_mic.wav">
                     </audio></td>
-
             </tr>
-            <tr>
-                <td class="tg-0pky">DC-F-T-LSTM-CLSTM</td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/dc_ftlstm_clstm_segsnr/clean/120_mic.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/dc_ftlstm_clstm_segsnr/clean/20_mic.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/dc_ftlstm_clstm_segsnr/clean/420_mic.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/dc_ftlstm_clstm_segsnr/clean/500_mic.wav">
-                    </audio></td>
-                <td class="tg-ihkz"><audio controls="">
-                        <source src="./samples/simu_test/dc_ftlstm_clstm_segsnr/clean/50_mic.wav">
-                    </audio></td>
-            </tr>
+            
         </tbody>
     </table>
     <h3>Double-talk with noisy near-end signal</h3>
