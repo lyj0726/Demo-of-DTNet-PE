@@ -1,4 +1,4 @@
-## Samples from "Mix Transformer Network with Pyramid Encoder for Acoustic Echo Cancellation"
+## Samples from "Improving Acoustic Echo Cancellation by Mixing Speech Local and Global Features with Transformer"
 __Authors__: Yajie Liu, Weiping Tu, Yuhong Yang, Li Xiao
 
 
